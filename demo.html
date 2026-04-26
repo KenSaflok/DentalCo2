@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book a DentalCo demo to review your collections workflow, patient payment friction, and membership revenue opportunities." />
+  <title>Book Demo | DentalCo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-content">
+    <a href="index.html" class="logo">Dental<span>Co</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="demo-layout container">
+  <div class="demo-copy">
+    <span class="eyebrow">Book a demo</span>
+    <h1>Show us your collections bottlenecks and we will map the workflow.</h1>
+    <p>The session covers your billing follow-up process, patient payment friction points, and whether memberships are a fit for your practice mix. No sales pressure — just a working review of your current state and where automation helps most.</p>
+
+    <h2 style="font-size:1.15rem; margin-top:28px;">What to expect</h2>
+    <ul class="benefit-list">
+      <li>Review of your current A/R and collections motion</li>
+      <li>Live walkthrough of automated reminders, digital payments, and memberships</li>
+      <li>Recommended rollout approach for your team size and location count</li>
+      <li>A summary of potential collections lift based on your current volume</li>
+    </ul>
+
+    <div class="card" style="margin-top:28px; background:var(--primary-light); border-color:rgba(26,111,186,0.2);">
+      <p style="margin:0; font-size:0.9rem; font-weight:600; color:var(--primary-dark);">📅 Sessions are typically 30 minutes and held via video call. Your form submission is stored locally in this demo build — connect it to your CRM or backend before going live.</p>
+    </div>
+  </div>
+
+  <div class="card form-card">
+    <h2>Request your session</h2>
+    <p class="form-intro">Complete the form and the DentalCo team will prepare a walkthrough tailored to your practice.</p>
+
+    <form id="demoForm" novalidate>
+
+      <div class="field-group">
+        <label for="practiceName">Practice name <span aria-hidden="true">*</span></label>
+        <input id="practiceName" name="practiceName" type="text" autocomplete="organization" required placeholder="Bright Smile Dental Group" />
+      </div>
+
+      <div class="field-group">
+        <label for="contactName">Your name <span aria-hidden="true">*</span></label>
+        <input id="contactName" name="contactName" type="text" autocomplete="name" required placeholder="Jane Smith" />
+      </div>
+
+      <div class="field-group two-col">
+        <div class="field-group">
+          <label for="email">Work email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@brightsmile.com" />
+        </div>
+        <div class="field-group">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 000-0000" />
+        </div>
+      </div>
+
+      <div class="field-group two-col">
+        <div class="field-group">
+          <label for="locations">Number of locations <span aria-hidden="true">*</span></label>
+          <select id="locations" name="locations" required>
+            <option value="">Select</option>
+            <option value="1">1 location</option>
+            <option value="2-5">2–5 locations</option>
+            <option value="6-15">6–15 locations</option>
+            <option value="16+">16+ locations</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="priority">Primary goal <span aria-hidden="true">*</span></label>
+          <select id="priority" name="priority" required>
+            <option value="">Select</option>
+            <option value="collections">Improve collections rate</option>
+            <option value="payments">Modernise patient payments</option>
+            <option value="memberships">Launch membership plans</option>
+            <option value="reporting">Improve reporting visibility</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label for="notes">Anything else you'd like us to know</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Current billing process, tools you use, main pain points…"></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Schedule My Demo</button>
+        <p class="privacy-note">Submissions are stored locally in this demo build. Wire a real endpoint before going live.</p>
+      </div>
+
+      <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+      <section id="submissionSummary" class="submission-summary" aria-live="polite" hidden>
+        <h3 style="margin:0 0 12px; font-size:0.95rem;">Latest saved request</h3>
+        <dl></dl>
+      </section>
+
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner container">
+    <div class="footer-logo">Dental<span>Co</span></div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <p class="footer-copy">© 2026 DentalCo</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
