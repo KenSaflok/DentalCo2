@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Book a DentalCo demo to review collections workflows, patient payments, and membership opportunities.">
+<title>Book Demo | DentalCo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar">
+<div class="container nav-content">
+<a href="index.html" class="logo">DentalCo</a>
+<nav aria-label="Primary navigation">
+<a href="index.html">Home</a>
+<a href="features.html">Features</a>
+<a href="pricing.html">Pricing</a>
+</nav>
+</div>
+</header>
+
+<section class="contact container demo-layout">
+<div class="demo-copy">
+<p class="eyebrow">Book a demo</p>
+<h1>Show us your collections bottlenecks and we will map the workflow.</h1>
+<p>The session covers billing follow-up, patient payment friction, and whether memberships make sense for your practice mix.</p>
+<div class="demo-benefits card">
+<h2>What to expect</h2>
+<ul class="feature-checklist">
+<li>Review of your current collections motion</li>
+<li>Demo of A/R reminders, payments, and memberships</li>
+<li>Recommended rollout approach for your team size</li>
+<li>Summary saved locally in this demo app after submission</li>
+</ul>
+</div>
+</div>
+<div class="card form-card">
+<h2>Request your session</h2>
+<p class="form-intro">Complete the form and DentalCo will prepare a tailored walkthrough.</p>
+<form id="demoForm" novalidate>
+<div class="field-group">
+<label for="practiceName">Practice name</label>
+<input id="practiceName" name="practiceName" type="text" autocomplete="organization" required>
+</div>
+<div class="field-group">
+<label for="contactName">Contact name</label>
+<input id="contactName" name="contactName" type="text" autocomplete="name" required>
+</div>
+<div class="field-group two-column">
+<div>
+<label for="email">Work email</label>
+<input id="email" name="email" type="email" autocomplete="email" required>
+</div>
+<div>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel" autocomplete="tel">
+</div>
+</div>
+<div class="field-group two-column">
+<div>
+<label for="locations">Locations</label>
+<select id="locations" name="locations" required>
+<option value="">Select</option>
+<option value="1">1 location</option>
+<option value="2-5">2-5 locations</option>
+<option value="6-15">6-15 locations</option>
+<option value="16+">16+ locations</option>
+</select>
+</div>
+<div>
+<label for="priority">Primary priority</label>
+<select id="priority" name="priority" required>
+<option value="">Select</option>
+<option value="collections">Improve collections</option>
+<option value="payments">Modernize patient payments</option>
+<option value="memberships">Launch memberships</option>
+<option value="reporting">Improve reporting visibility</option>
+</select>
+</div>
+</div>
+<div class="field-group">
+<label for="notes">Notes</label>
+<textarea id="notes" name="notes" rows="4" placeholder="Tell us about your current billing or collections process."></textarea>
+</div>
+<div class="form-actions">
+<button type="submit" class="button-link">Schedule Demo</button>
+<p class="privacy-note">Your request is stored locally in this demo build so you can validate the flow before wiring a real backend.</p>
+</div>
+<p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+<section id="submissionSummary" class="submission-summary" aria-live="polite" hidden>
+<h3>Latest saved request</h3>
+<dl></dl>
+</section>
+</form>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
